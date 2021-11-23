@@ -51,3 +51,5 @@
 ![image](https://user-images.githubusercontent.com/62937814/143014369-d76a9a48-ad98-45b8-810f-55edaa37f60c.png)
    - Tree
 ![image](https://user-images.githubusercontent.com/62937814/143014573-e8dd9f71-547c-4168-b9ce-d4edef8b42fc.png)
+   - Pembagian IP
+![image](https://user-images.githubusercontent.com/62937814/143018866-6ce2d65b-f733-4816-b2ba-5a0411c17eeb.png)
