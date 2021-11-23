@@ -36,9 +36,14 @@
  
 ![image](https://user-images.githubusercontent.com/62937814/143012499-109ecbd4-5e18-4406-8ec1-08bd424a2545.png)
  
-   - Pohon Pembagian IP
+   - Tree
  
 ![image](https://user-images.githubusercontent.com/62937814/143012403-f2555e5c-fdc2-4b36-bdf3-2ed36b0c4491.png)
+
+   - Pembagian IP
+ 
+![image](https://user-images.githubusercontent.com/62937814/143023925-dae0a13d-4d99-4182-9b65-2fd8bba59034.png)
+
 
 ## CIDR (Classless Inter Domain Routing)
 ![image](https://user-images.githubusercontent.com/62937814/143012930-1b408677-c986-482c-a713-7db662afe60d.png)
@@ -49,7 +54,11 @@
 ![image](https://user-images.githubusercontent.com/62937814/143014088-625d5e10-34d3-4c2f-902b-8c7a726aaa52.png)
 ![image](https://user-images.githubusercontent.com/62937814/143014256-27045a82-230d-495d-9d13-d15e08ea2e7f.png)
 ![image](https://user-images.githubusercontent.com/62937814/143014369-d76a9a48-ad98-45b8-810f-55edaa37f60c.png)
+
    - Tree
+ 
 ![image](https://user-images.githubusercontent.com/62937814/143014573-e8dd9f71-547c-4168-b9ce-d4edef8b42fc.png)
+
    - Pembagian IP
+ 
 ![image](https://user-images.githubusercontent.com/62937814/143018866-6ce2d65b-f733-4816-b2ba-5a0411c17eeb.png)
