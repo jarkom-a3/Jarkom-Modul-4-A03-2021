@@ -41,6 +41,7 @@
 ![image](https://user-images.githubusercontent.com/62937814/143012403-f2555e5c-fdc2-4b36-bdf3-2ed36b0c4491.png)
 
    - Pembagian IP
+     Dari Tree akan mendapat pembagian IP sebagai berikut.
  
 ![image](https://user-images.githubusercontent.com/62937814/143023925-dae0a13d-4d99-4182-9b65-2fd8bba59034.png)
 
@@ -60,5 +61,6 @@
 ![image](https://user-images.githubusercontent.com/62937814/143014573-e8dd9f71-547c-4168-b9ce-d4edef8b42fc.png)
 
    - Pembagian IP
- 
+     Dari Tree akan mendapat pembagian IP sebagai berikut.
+     
 ![image](https://user-images.githubusercontent.com/62937814/143018866-6ce2d65b-f733-4816-b2ba-5a0411c17eeb.png)
