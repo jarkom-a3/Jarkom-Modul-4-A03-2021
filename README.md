@@ -1,5 +1,13 @@
 # Jarkom-Modul-4-A03-2021
 
+## Anggota
+
+| Nama | NRP |
+| :----: | :----: |
+| Jessica Tasyanita | 05111940000043 |
+| Daniel Sugianto | 05111940000075 |
+| Ryan Fernaldy | 05111940000152 |
+
 ![image](https://user-images.githubusercontent.com/62937814/143009423-a7c5e6a1-76d6-4533-8a3d-5742cd626015.png)
 
 ## VLSM (Variable Length Subnet Masking)
