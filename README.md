@@ -63,4 +63,4 @@
    - Pembagian IP
      Dari Tree akan mendapat pembagian IP sebagai berikut.
      
-![image](https://user-images.githubusercontent.com/62937814/143018866-6ce2d65b-f733-4816-b2ba-5a0411c17eeb.png)
+![image](https://user-images.githubusercontent.com/62937814/143024759-17f5f51a-4b1b-4a4c-a5a6-9a44a7d23152.png)
