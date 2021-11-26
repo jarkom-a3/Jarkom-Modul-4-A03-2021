@@ -64,3 +64,164 @@
      Dari Tree akan mendapat pembagian IP sebagai berikut.
      
 ![image](https://user-images.githubusercontent.com/62937814/143024759-17f5f51a-4b1b-4a4c-a5a6-9a44a7d23152.png)
+
+## CPT Menggunakan VLSM
+
+### A2
+- Atur IP pada interface FOOSHA (Fa 1/0) yang mengarah ke client BLUENO dengan 192.170.8.1 dan Subnet Mask 255.255.252.0
+  ![image](https://user-images.githubusercontent.com/68326540/143527094-50621698-fd95-4a58-8879-64b2a175ba82.png)
+- Atur IP pada client BLUENO dengan 192.170.8.2 dan Subnet Mask 255.255.252.0 serta Default Gateway ke FOOSHA (192.170.8.1)
+  ![image](https://user-images.githubusercontent.com/68326540/143527132-d4369351-a3af-4277-85d0-583b8bcacdfa.png)
+
+### A7
+- Atur IP pada interface FOOSHA (Eth 1/1/0) yang mengarah ke client DORIKI dengan 192.170.27.161 dan Subnet Mask 255.255.255.252
+  ![image](https://user-images.githubusercontent.com/68326540/143527169-8e094731-ed2d-49e1-8fa5-e094f26c15bd.png)
+- Atur IP pada DORIKI dengan 192.170.27.162 dan Subnet Mask 255.255.255.252 serta Default Gateway ke FOOSHA (192.170.27.161)
+  ![image](https://user-images.githubusercontent.com/68326540/143527206-1dca73e3-aa03-4b79-b238-7bfea7969b8a.png)
+
+### A9
+- Atur IP pada interface FOOSHA (Fa 1/1) yang mengarah ke GUANHAO dengan 192.170.27.153 dan Subnet Mask 255.255.255.252
+  ![image](https://user-images.githubusercontent.com/68326540/143527282-3be1c4d1-c993-4476-9148-b65c88f526c6.png)
+- Atur IP pada interface GUANHAO (Fa 0/0) yang mengarah ke FOOSHA dengan 192.170.27.154 dan Subnet Mask 255.255.255.252
+  ![image](https://user-images.githubusercontent.com/68326540/143527316-c9cc0585-33e0-4b16-aec8-95606b975b8b.png)
+- Tambahkan Default Routing pada GUANHAO ke FOOSHA
+  ![image](https://user-images.githubusercontent.com/68326540/143527341-881a76b3-ebdd-4779-b1c6-7d48b7e01afe.png)
+
+### A8
+- Atur IP pada interface GUANHAO  (Fa 1/0) yang mengarah ke client JABRA dengan 192.170.16.1 dan Subnet Mask 255.255.252.0
+  ![image](https://user-images.githubusercontent.com/68326540/143527440-1f12cba5-a15b-4482-b01d-ed462dc08654.png)
+- Atur IP pada client JABRA dengan 192.170.16.2 dan Subnet Mask 255.255.252.0 serta Default Gateway ke GUANHAO(192.170.16.1)
+  ![image](https://user-images.githubusercontent.com/68326540/143527447-32ef7946-66ae-43b9-94ef-416aa57fce48.png)
+- Tambahkan Static Routing pada FOOSHA menuju network yang digunakan JABRA melalui Router GUANHAO  (192.170.27.154)
+  ![image](https://user-images.githubusercontent.com/68326540/143527461-78bdced9-bf30-4b5f-8eb0-979e8ed56e4b.png)
+
+### A10
+- Atur IP pada interface GUANHAO  (Fa 1/1) yang mengarah ke client MAINGATE dengan 192.170.24.1 dan Subnet Mask 255.255.254.0
+  ![image](https://user-images.githubusercontent.com/68326540/143527558-8a60b6ab-03f4-4d3c-a74b-b16d1baffcd7.png)
+- Atur IP pada client MAINGATE dengan 192.170.24.2 dan Subnet Mask 255.255.254.0 serta Default Gateway ke GUANHAO(192.170.24.1)
+  ![image](https://user-images.githubusercontent.com/68326540/143527586-d13d5c56-5759-4c3b-a3ea-f0b0ee07ee65.png)
+- Tambahkan Static Routing pada FOOSHA menuju network yang digunakan MAINGATE melalui Router GUANHAO  (192.170.27.154)
+  ![image](https://user-images.githubusercontent.com/68326540/143527592-330081e4-93dd-41a9-9995-a4eb627a4040.png)
+- Atur IP pada interface ALABASTA (Fa 0/0) yang mengarah ke router GUANHAO dengan 192.170.24.3 dan Subnet Mask 255.255.254.0 karena interface ini berada di jaringan A10
+ ![image](https://user-images.githubusercontent.com/68326540/143527658-ec793695-25a2-4dbe-b79c-95ed92d987c7.png)
+- Tambahkan Default Routing pada ALABASTA ke GUANHAO
+  ![image](https://user-images.githubusercontent.com/68326540/143527693-ade90f60-8a86-4338-a2e9-e651f73e2e89.png)
+
+### A11
+- Atur IP pada interface ALABASTA (Fa 0/1) yang mengarah ke client JORGE dengan 192.170.27.129 dan Subnet Mask 255.255.255.240
+  ![image](https://user-images.githubusercontent.com/68326540/143527725-84d15d95-8673-4c84-87ae-9c5a33d1686f.png)
+- Atur IP pada client JORGE dengan 192.170.27.130 dan Subnet Mask 255.255.255.240 serta Default Gateway ke ALABASTA(192.170.27.129)
+  ![image](https://user-images.githubusercontent.com/68326540/143527765-17530170-e435-4d57-8772-7e1caa32ea30.png)
+- Tambahkan static routing menuju jaringan yang digunakan client JORGE di Router GUANHAO melalui Router ALABASTA
+  ![image](https://user-images.githubusercontent.com/68326540/143527779-b11a8be1-59fc-4769-a0d3-74e92622aceb.png)
+- Tambahkan Static routing menuju jaringan yang digunakan client JORGE di Router FOOSHA melalui Router GUANHAO
+  ![image](https://user-images.githubusercontent.com/68326540/143527788-0121125c-82ee-4d91-8a3c-f581b9368511.png)
+
+### A14
+- Atur IP pada interface GUANHAO (Fa 0/1) yang mengarah ke OIMO dengan 192.170.27.157 dan Subnet Mask 255.255.255.252
+  ![image](https://user-images.githubusercontent.com/68326540/143527888-71e677f7-25cb-47ef-9208-a928835224d2.png)
+- Atur IP pada interface OIMO(Fa 0/0) yang mengarah ke GUANHAO dengan 192.170.27.158 dan Subnet Mask 255.255.255.252
+  ![image](https://user-images.githubusercontent.com/68326540/143527921-badae26a-f0f6-4e12-b2d7-244b05b270c0.png)
+- Tambahkan Default Routing pada OIMO ke GUANHAO
+  ![image](https://user-images.githubusercontent.com/68326540/143527952-6b9cb59e-4481-474d-8d68-3474bb0003bb.png)
+- Tambahkan static routing dari foosha ke jaringan ini
+  ![image](https://user-images.githubusercontent.com/68326540/143527981-d4d10ebc-6d58-477f-a681-4c03a1b8fbf3.png)
+
+### A12
+- Atur IP pada interface OIMO(Fa 0/1) yang mengarah ke client ENIESLOBBY dengan 192.170.26.1 dan Subnet Mask 255.255.255.0
+  ![image](https://user-images.githubusercontent.com/68326540/143528043-f336bcc8-cea8-4f27-84ee-bf019948fbad.png)
+- Atur IP pada client ENIESLOBBY dengan 192.170.26.2 dan Subnet Mask 255.255.255.0 serta Default Gateway ke OIMO(192.170.26.1)
+  ![image](https://user-images.githubusercontent.com/68326540/143528062-5ac35e30-ed92-42aa-b8d2-7d4e13515332.png)
+- Tambahkan static routing menuju jaringan yang digunakan client ENIESLOBBY di Router GUANHAO melalui Router OIMO
+  ![image](https://user-images.githubusercontent.com/68326540/143528181-cde7f5d8-8e99-436b-a4d7-3e1fb4b906f3.png)
+- Tambahkan static routing menuju jaringan yang digunakan client ENIESLOBBY di Router FOOSHA melalui Router GUANHAO
+  ![image](https://user-images.githubusercontent.com/68326540/143528226-a1c1e349-5c55-40d8-bf2b-fdebdc7c6e82.png)
+- Atur IP pada interface router SEASTONE(Fa 0/0) yang mengarah ke router OIMO dengan 192.170.26.3 dan Subnet Mask 255.255.255.0
+  ![image](https://user-images.githubusercontent.com/68326540/143528518-886dd2f3-436a-4e52-a54c-442b4fcfa350.png)
+- Tambahkan Default Routing pada SEASTONE ke OIMO
+  ![image](https://user-images.githubusercontent.com/68326540/143528533-6dd91ae3-4deb-4547-af81-214c9efebda4.png)
+
+
+### A15
+- Atur IP pada interface OIMO(Fa 1/0) yang mengarah ke FUKOROU dengan 192.170.27.165 dan Subnet Mask 255.255.255.252
+  ![image](https://user-images.githubusercontent.com/68326540/143528272-7798fef7-27bd-4df2-85e2-0abed91007f9.png)
+- Atur IP pada client FUKOROU dengan 192.170.27.166 dan Subnet Mask 255.255.255.252 serta Default Gateway ke OIMO(192.170.27.165)
+  ![image](https://user-images.githubusercontent.com/68326540/143528305-309ddf52-f5c5-4971-bd3e-8fa48f7892ac.png)
+- Tambahkan static routing menuju jaringan yang digunakan FUKOROU di Router GUANHAO melalui Router OIMO
+  ![image](https://user-images.githubusercontent.com/68326540/143528394-c91fbff0-8734-4049-a8f9-f2f8263c3549.png)
+- Tambahkan static routing menuju jaringan yang digunakan FUKOROU di Router FOOSHA melalui Router GUANHAO
+  ![image](https://user-images.githubusercontent.com/68326540/143528369-776377fa-915c-4255-ae80-14983e9d6b6e.png)
+
+### A13
+- Atur IP pada interface SEASTONE(Fa 0/1) yang mengarah ke client ELENA dengan 192.170.20.1 dan Subnet Mask 255.255.252.0
+  ![image](https://user-images.githubusercontent.com/68326540/143528597-55d9f401-c210-4bc9-9097-d64e44911608.png)
+- Atur IP pada client ELENA dengan 192.170.20.2 dan Subnet Mask 255.255.252.0 serta Default Gateway ke SEASTONE(192.170.20.1)
+  ![image](https://user-images.githubusercontent.com/68326540/143528624-b235e7dc-4bf1-4201-b247-cc9934f2b1ae.png)
+- Tambahkan static routing menuju jaringan yang digunakan client ELENA di Router OIMO melalui Router SEASTONE
+  ![image](https://user-images.githubusercontent.com/68326540/143528643-4f548c59-d3b1-4607-a7c8-320bc31bce8d.png)
+- Tambahkan static routing menuju jaringan yang digunakan client ELENA di Router GUANHAO melalui Router OIMO
+  ![image](https://user-images.githubusercontent.com/68326540/143528671-841fb9c6-e57b-47a8-aa67-811e5ee5246f.png)
+- Tambahkan static routing menuju jaringan yang digunakan client ELENA di Router FOOSHA melalui Router GUANHAO
+  ![image](https://user-images.githubusercontent.com/68326540/143528690-7e563d7e-4323-40c7-8d77-2d9a3951c7e8.png)
+
+### A6
+- Atur IP pada interface FOOSHA (Fa 0/1) yang mengarah ke WATER7 dengan 192.170.27.149 dan Subnet Mask 255.255.255.252
+  ![image](https://user-images.githubusercontent.com/68326540/143528736-93ac3657-e92a-4319-b128-3b630ad74cbb.png)
+- Atur IP pada interface WATER7(Fa 0/0) yang mengarah ke FOOSHA dengan 192.170.27.150 dan Subnet Mask 255.255.255.252
+  ![image](https://user-images.githubusercontent.com/68326540/143528755-803c5f70-1e14-4279-92bd-81f9372d0c0c.png)
+- Tambahkan Default Routing pada WATER7 ke FOOSHA
+  ![image](https://user-images.githubusercontent.com/68326540/143528775-c2a4a830-c6ec-4303-98c2-6a850e1dc91d.png)
+
+### A1
+- Atur IP pada interface WATER7(Fa 1/0) yang mengarah ke CIPHER dengan 192.170.12.1 dan Subnet Mask 255.255.252.0
+  ![image](https://user-images.githubusercontent.com/68326540/143528832-04c3542b-920c-4cbd-ae31-6c154ba1451f.png)
+- Atur IP pada client CIPHER dengan 192.170.12.2 dan Subnet Mask 255.255.252.0 serta Default Gateway ke WATER7(192.170.12.1)
+  ![image](https://user-images.githubusercontent.com/68326540/143528843-50503092-2c3c-41a0-8e4b-fb4c5542b604.png)
+- Tambahkan static routing menuju jaringan yang digunakan CIPHER di Router FOOSHA melalui Router WATER7
+  ![image](https://user-images.githubusercontent.com/68326540/143528876-4f6b7615-4ead-436c-9c5d-eb12e25326bc.png)
+
+### A5
+- Atur IP pada interface WATER7(Fa 0/1) yang mengarah ke PUCCI dengan 192.170.27.145 dan Subnet Mask 255.255.255.252
+  ![image](https://user-images.githubusercontent.com/68326540/143528923-866fead9-b2fc-4346-8aa7-19e36bb3a6a9.png)
+- Atur IP pada interface PUCCI(Fa 0/0) yang mengarah ke WATER7dengan 192.170.27.146 dan Subnet Mask 255.255.255.252
+  ![image](https://user-images.githubusercontent.com/68326540/143528937-faedbb8d-93f4-48f3-9601-41cf7a62675a.png)
+- Tambahkan Default Routing pada PUCCI ke WATER7
+  ![image](https://user-images.githubusercontent.com/68326540/143528963-56d0a630-bd4a-4476-8e51-6e6f5ab93657.png)
+- Tambahkan static routing dari foosha ke jaringan ini
+  ![image](https://user-images.githubusercontent.com/68326540/143528982-15984049-46e2-4216-a7b3-d59d0da8a991.png)
+
+### A3
+- Atur IP pada interface PUCCI(Fa 1/0) yang mengarah ke JIPANGU dengan 192.170.27.1 dan Subnet Mask 255.255.255.128
+  ![image](https://user-images.githubusercontent.com/68326540/143529032-a97260d7-7240-48d6-9a56-225a42049b02.png)
+- Atur IP pada client JIPANGU dengan 192.170.27.2 dan Subnet Mask 255.255.255.128 serta Default Gateway ke PUCCI(192.170.27.1)
+  ![image](https://user-images.githubusercontent.com/68326540/143529044-3a902fff-2233-485e-b70d-eca4736d6da2.png)
+- Tambahkan static routing menuju jaringan yang digunakan CIPHER di Router WATER7 melalui Router PUCCI
+  ![image](https://user-images.githubusercontent.com/68326540/143529078-c773c2ed-7ebe-489a-b461-9afd4e251b8f.png)
+- Tambahkan static routing menuju jaringan yang digunakan CIPHER di Router FOOSHA melalui Router WATER7
+  ![image](https://user-images.githubusercontent.com/68326540/143529100-72e5476d-0db0-431c-b975-e58bd38e12b9.png)
+
+### A4
+- Atur IP pada interface PUCCI(Fa 1/0) yang mengarah ke jaringan A4 dengan 192.170.0.1 dan Subnet Mask 255.255.248.0
+  ![image](https://user-images.githubusercontent.com/68326540/143529286-5181760d-8c8c-4d57-a449-461bf1070c03.png)
+- Atur IP pada client CALMBET dengan 192.170.0.2 dan Subnet Mask 255.255.248.0 serta Default Gateway ke PUCCI(192.170.0.1)
+  ![image](https://user-images.githubusercontent.com/68326540/143529351-57a54e71-7bde-4df0-a398-06719fed4c44.png)
+- Atur IP pada client COURTYARD dengan 192.170.0.3 dan Subnet Mask 255.255.248.0 serta Default Gateway ke PUCCI(192.170.0.1)
+  ![image](https://user-images.githubusercontent.com/68326540/143529389-fb68cbcd-324d-4722-84fd-7e8befd14522.png)
+- Tambahkan static routing menuju jaringan A4 di Router WATER7 melalui Router PUCCI
+  ![image](https://user-images.githubusercontent.com/68326540/143529415-6f0f0fb4-da7e-4684-a766-e3b5b897ebf1.png)
+- Tambahkan static routing menuju jaringan A4 di Router FOOSHA melalui Router WATER7
+  ![image](https://user-images.githubusercontent.com/68326540/143529425-9513e387-0bf5-4b7a-ab90-e1d9c7da7512.png)
+
+### Hasil
+![image](https://user-images.githubusercontent.com/68326540/143529668-db051cbf-0323-4482-9ced-c5f6c55a5503.png)
+
+### Kendala
+CPT sedikit kurang responsif (butuh beberapa kali pengiriman untuk mendapatkan success)
+
+
+
+
+
+
+
+
