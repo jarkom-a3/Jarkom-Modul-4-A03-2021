@@ -391,6 +391,21 @@ Ubah network configuration pada DORIKI(eth0) yang mengarah ke FOOSHA(eth3) menja
 Tidak ada
 ### A8
 ### Cara Pengerjaan
+
+Ubah network configuration pada JABRA(eth0) yang mengarah ke GUANHAO(eth1) menjadi seperti berikut.
+
+![image](https://user-images.githubusercontent.com/58259649/143674535-4bcdafbc-90a3-4263-8b5b-70ffbfea4841.png)
+
+Ubah network configuration pada GUANHAO(eth1) menjadi seperti berikut.
+
+![image](https://user-images.githubusercontent.com/58259649/143674563-bf65ff63-a2b5-4cb3-9ffa-85fe18056ca9.png)
+
+Tambahkan static routing menuju jaringan A8 di router FOOSHA melalui router GUANHAO
+
+```
+route add -net 192.170.36.0 netmask 255.255.252.0 gw 192.170.64.2
+```
+
 ### Kendala
 
 Tidak ada
