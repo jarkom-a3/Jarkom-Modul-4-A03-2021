@@ -42,9 +42,7 @@ Penentuan Netmask diambil dari Jumlah IP dari setiap subnet dan juga usable IP p
 | A14 | guanhao-oimo | 2 | /30  |
 | A15 | oimo-fukurou | 2 | /30  |
 |  |  | 5845 | /19  |
- 
-![image](https://user-images.githubusercontent.com/62937814/143012499-109ecbd4-5e18-4406-8ec1-08bd424a2545.png)
- 
+
    - Tree
 Untuk root atau puncak dari tree diambil dari prefix setiap kelompok ditambah dengan 0.0. dan untuk netmask nya diambil dari total netmask yang tercover.    Setiap turun, maka netmask akan dikurangi 1. Untuk penentuan IP berikutnya diambil dari IP saat ini, dan dilihat dari wildcard, yang tertera pada wildcard akan ditambah 1 lalu dibagi 2.
 
