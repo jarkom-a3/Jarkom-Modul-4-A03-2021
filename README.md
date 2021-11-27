@@ -47,6 +47,9 @@
 
 
 ## CIDR (Classless Inter Domain Routing)
+
+Menggabungkan subnet-subnet dalam topologi dimulai dari subnet yang terbawah seperti berikut.
+
 ![image](https://user-images.githubusercontent.com/62937814/143012930-1b408677-c986-482c-a713-7db662afe60d.png)
 ![image](https://user-images.githubusercontent.com/62937814/143013273-85d01ad4-9397-470b-9bc2-c84638ab5630.png)
 ![image](https://user-images.githubusercontent.com/62937814/143013595-a6a8d3a2-17d6-4600-addf-beb6460e25d5.png)
