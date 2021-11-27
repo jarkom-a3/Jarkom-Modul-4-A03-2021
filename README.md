@@ -520,6 +520,17 @@ Tambahkan static routing menuju jaringan A12 di router FOOSHA melalui router GUA
 route add -net 192.170.4.0 netmask 255.255.255.0 gw 192.170.64.2
 ```
 
+Ubah network configuration pada SEASTONE(eth0) yang mengarah ke OIMO(eth1) menjadi seperti berikut.
+
+![image](https://user-images.githubusercontent.com/58259649/143679595-ae1c351d-1a25-4b46-b063-038b3fe52055.png)
+
+
+Tambahkan default routing pada SEASTONE yang mengarah ke OIMO dengan command berikut.
+
+```
+route add -net 0.0.0.0 netmask 0.0.0.0 gw 192.170.4.1
+```
+
 ### Kendala
 
 Tidak ada
