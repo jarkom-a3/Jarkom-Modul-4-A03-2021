@@ -257,11 +257,12 @@ Tambahkan default routing pada WATER7 yang mengarah ke FOOSHA dengan command ber
 route add -net 0.0.0.0 netmask 0.0.0.0 gw 192.171.64.1
 ```
 
-Tambahkan static routing menuju jaringan A1 di router FOOSHA melalui Router WATER7
+Tambahkan static routing menuju jaringan A1 di router FOOSHA melalui router WATER7
 
 ```
 route add -net 192.171.32.0 netmask 255.255.252.0 gw 192.171.64.2
 ```
+
 ### Kendala
 
 Tidak ada
