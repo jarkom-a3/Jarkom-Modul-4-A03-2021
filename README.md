@@ -282,6 +282,27 @@ Ubah network configuration pada FOOSHA(eth1) menjadi seperti berikut.
 Tidak ada
 ### A3
 ### Cara Pengerjaan
+
+Ubah network configuration pada PUCCI(eth1) menjadi seperti berikut.
+
+![image](https://user-images.githubusercontent.com/58259649/143673063-9e48a805-0bf8-4551-a205-df856791ecda.png)
+
+Ubah network configuration pada JIPANGU(eth0) yang mengarah ke PUCCI(eth1) menjadi seperti berikut.
+
+![image](https://user-images.githubusercontent.com/58259649/143673094-8b154c8a-189e-460f-bc88-b4ac037dff51.png)
+
+Tambahkan static routing menuju jaringan A3 di router WATER7 melalui router PUCCI
+
+```
+route add -net 192.171.8.0 netmask 255.255.255.128 gw 192.171.16.2
+```
+
+Tambahkan static routing menuju jaringan A3 di router FOOSHA melalui router WATER7
+
+```
+route add -net 192.171.8.0 netmask 255.255.255.128 gw 192.171.64.2
+```
+
 ### Kendala
 
 Tidak ada
