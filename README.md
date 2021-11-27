@@ -464,6 +464,27 @@ route add -net 0.0.0.0 netmask 0.0.0.0 gw 192.170.32.1
 Tidak ada
 ### A11
 ### Cara Pengerjaan
+
+Ubah network configuration pada JORGE(eth0) yang mengarah ke ALABASTA(eth1) menjadi seperti berikut.
+
+![image](https://user-images.githubusercontent.com/58259649/143675390-5eacb8ec-f57a-4154-beab-6c8be9ffd10a.png)
+
+Ubah network configuration pada ALABASTA(eth1) menjadi seperti berikut.
+
+![image](https://user-images.githubusercontent.com/58259649/143675400-e3f12154-f5f6-4218-bd04-d092c4d2a422.png)
+
+Tambahkan static routing menuju jaringan A11 di router GUANHAO melalui router ALABASTA
+
+```
+route add -net 192.170.34.0 netmask 255.255.255.240 gw 192.170.32.3
+```
+
+Tambahkan static routing menuju jaringan A11 di router FOOSHA melalui router GUANHAO
+
+```
+route add -net 192.170.34.0 netmask 255.255.255.240 gw 192.170.64.2
+```
+
 ### Kendala
 
 Tidak ada
