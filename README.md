@@ -434,6 +434,31 @@ route add -net 0.0.0.0 netmask 0.0.0.0 gw 192.170.64.1
 Tidak ada
 ### A10
 ### Cara Pengerjaan
+
+Ubah network configuration pada MAINGATE(eth0) yang mengarah ke GUANHAO(eth2) menjadi seperti berikut.
+
+![image](https://user-images.githubusercontent.com/58259649/143675075-934b6134-0b6f-4f59-8bb6-3dfd2171e78d.png)
+
+Ubah network configuration pada GUANHAO(eth2) menjadi seperti berikut.
+
+![image](https://user-images.githubusercontent.com/58259649/143675091-a07f8f36-571e-48bf-b62b-5cfc56a95bfc.png)
+
+Tambahkan static routing menuju jaringan A10 di router FOOSHA melalui router GUANHAO
+
+```
+route add -net 192.170.32.0 netmask 255.255.254.0 gw 192.170.64.2
+```
+
+Ubah network configuration pada ALABASTA(eth0) yang mengarah ke GUANHAO(eth2) menjadi seperti berikut.
+
+![image](https://user-images.githubusercontent.com/58259649/143675167-b62b1bf2-8357-427f-9701-0c0b3dabbf27.png)
+
+Tambahkan default routing pada ALABASTA yang mengarah ke GUANHAO dengan command berikut.
+
+```
+route add -net 0.0.0.0 netmask 0.0.0.0 gw 192.170.32.1
+```
+
 ### Kendala
 
 Tidak ada
