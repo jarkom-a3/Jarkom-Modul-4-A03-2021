@@ -44,6 +44,7 @@ Penentuan Netmask diambil dari Jumlah IP dari setiap subnet dan juga usable IP p
 |  |  | 5845 | /19  |
 
    - Tree
+
 Untuk root atau puncak dari tree diambil dari prefix setiap kelompok ditambah dengan 0.0. dan untuk netmask nya diambil dari total netmask yang tercover.    Setiap turun, maka netmask akan dikurangi 1. Untuk penentuan IP berikutnya diambil dari IP saat ini, dan dilihat dari wildcard, yang tertera pada wildcard akan ditambah 1 lalu dibagi 2.
 
 ![image](https://user-images.githubusercontent.com/62937814/143012403-f2555e5c-fdc2-4b36-bdf3-2ed36b0c4491.png)
