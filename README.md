@@ -363,6 +363,15 @@ route add -net 192.171.16.0 netmask 255.255.248.0 gw 192.171.64.2
 Tidak ada
 ### A6
 ### Cara Pengerjaan
+
+Ubah network configuration pada FOOSHA(eth2) menjadi seperti berikut.
+
+![image](https://user-images.githubusercontent.com/58259649/143674217-bb541d2d-7a9d-452d-a6b9-e9f01766fa7a.png)
+
+Ubah network configuration pada WATER7(eth0) menjadi seperti berikut.
+
+![image](https://user-images.githubusercontent.com/58259649/143674224-cab9b8e5-5923-46da-8aab-fcb4dfa8899e.png)
+
 ### Kendala
 
 Tidak ada
