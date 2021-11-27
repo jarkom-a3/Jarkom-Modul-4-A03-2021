@@ -14,6 +14,16 @@
 
 ## VLSM (Variable Length Subnet Masking)
   - Subnetting
+![image](https://user-images.githubusercontent.com/62937814/143012499-109ecbd4-5e18-4406-8ec1-08bd424a2545.png)
+    
+    Melalui pembagian subnet pada gambar diatas, kita dapat menghitung jumlah IP dan Netmask dari setiap subnet. Untuk jumlah IP dapat dilihat melalui jumlah host pada setiap subnet yang ada. contoh A1(chiper-water7) memiliki 700 host. Maka jumlah IP ditambah 1 dari jumlah host. Untuk subnet yang tersambung dengan server seperti pada A5(pucci-water7) memiliki jumlah host 1 yang berarti jumlah IP nya adalah 2. 
+    
+    Untuk pembagian Netmask dapat dilihat melalui usable IP pada gambar berikut
+    
+    ![image](https://user-images.githubusercontent.com/62937814/143679015-cc61d98a-46d2-49d5-81a2-46f570132a3e.png)
+  
+    Penentuan Netmask diambil dari Jumlah IP dari setiap subnet dan juga usable IP pada gambar diatas. contoh A1(Chiper-water7) memiliki jumlah IP 701, oleh karena itu netmask yang dipilih adalah /22 karena dapat mencover jumlah IP 701 tersebut. Begitu pula untuk subnet yang lainnya.
+  
   
 | Subnet  | Alias | Jumlah IP | Netmask |
 | ------------- | ------------- | ------------- | ------------- |
@@ -33,10 +43,10 @@
 | A14 | guanhao-oimo | 2 | /30  |
 | A15 | oimo-fukurou | 2 | /30  |
 |  |  | 5845 | /19  |
- 
-![image](https://user-images.githubusercontent.com/62937814/143012499-109ecbd4-5e18-4406-8ec1-08bd424a2545.png)
+
  
    - Tree
+     Untuk root atau puncak dari tree diambil dari prefix setiap kelompok ditambah dengan 0.0. dan untuk netmask nya diambil dari total netmask yang tercover.    Setiap turun, maka netmask akan dikurangi 1. Untuk penentuan IP berikutnya diambil dari IP saat ini, dan dilihat dari wildcard, yang tertera pada wildcard akan ditambah 1 lalu dibagi 2.
  
 ![image](https://user-images.githubusercontent.com/62937814/143012403-f2555e5c-fdc2-4b36-bdf3-2ed36b0c4491.png)
 
