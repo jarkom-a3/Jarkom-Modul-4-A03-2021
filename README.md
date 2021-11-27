@@ -218,6 +218,28 @@
 ### Kendala
 CPT sedikit kurang responsif (butuh beberapa kali pengiriman untuk mendapatkan success)
 
+## GNS3 Menggunakan CIDR
+
+### Koneksi Internet
+Setiap node diminta agar dapat terhubung dengan internet, maka pada Foosha, jalankan command berikut.
+
+```
+iptables -t nat -A POSTROUTING -o eth0 -j MASQUERADE -s 192.170.0.0/15
+```
+
+![image](https://user-images.githubusercontent.com/58259649/143665931-9b742c0c-f62c-45a5-a772-1f6c33b99244.png)
+
+Untuk setiap node selain Foosha, jalankan command berikut.
+
+```
+echo nameserver 192.168.122.1 > /etc/resolv.conf
+```
+
+Terakhir, mencoba ping ke google.com dari salah satu node.
+
+![ping-pucci-google](https://user-images.githubusercontent.com/58259649/143665996-177173bc-1bd4-454b-b84c-6e2275a641c2.png)
+
+
 
 
 
