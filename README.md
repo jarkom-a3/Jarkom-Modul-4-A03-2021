@@ -594,6 +594,27 @@ route add -net 192.170.16.0 netmask 255.255.255.252 gw 192.170.64.2
 Tidak ada
 ### A15
 ### Cara Pengerjaan
+
+Ubah network configuration pada OIMO(eth3) menjadi seperti berikut.
+
+![image](https://user-images.githubusercontent.com/58259649/143680507-089ea49d-d22c-4334-a655-76ec581da379.png)
+
+Ubah network configuration pada FUKOROU(eth0) yang mengarah ke OIMO(eth3) menjadi seperti berikut.
+
+![image](https://user-images.githubusercontent.com/58259649/143680520-1d34d1f1-910b-4c64-883e-2df45e2b775c.png)
+
+Tambahkan static routing menuju jaringan A15 di router GUANHAO melalui router OIMO
+
+```
+route add -net 192.170.8.0 netmask 255.255.255.252 gw 192.170.16.2
+```
+
+Tambahkan static routing menuju jaringan A15 di router FOOSHA melalui router GUANHAO
+
+```
+route add -net 192.170.0.0 netmask 255.255.252.0 gw 192.170.64.2
+```
+
 ### Kendala
 
 Tidak ada
