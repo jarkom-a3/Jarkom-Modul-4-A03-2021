@@ -536,6 +536,33 @@ route add -net 0.0.0.0 netmask 0.0.0.0 gw 192.170.4.1
 Tidak ada
 ### A13
 ### Cara Pengerjaan
+
+Ubah network configuration pada SEASTONE(eth1) menjadi seperti berikut.
+
+![image](https://user-images.githubusercontent.com/58259649/143679860-b1d665dc-e52a-4aa3-a7df-1ca37a1e3c3a.png)
+
+Ubah network configuration pada ELENA(eth0) yang mengarah ke SEASTONE(eth1) menjadi seperti berikut.
+
+![image](https://user-images.githubusercontent.com/58259649/143679887-186ec5ab-e83c-4d7c-8ca9-a74ba11f49c3.png)
+
+Tambahkan static routing menuju jaringan A13 di router OIMO melalui router SEASTONE
+
+```
+route add -net 192.170.0.0 netmask 255.255.252.0 gw 192.170.4.3
+```
+
+Tambahkan static routing menuju jaringan A13 di router GUANHAO melalui router OIMO
+
+```
+route add -net 192.170.0.0 netmask 255.255.252.0 gw 192.170.16.2
+```
+
+Tambahkan static routing menuju jaringan A13 di router FOOSHA melalui router GUANHAO
+
+```
+route add -net 192.170.0.0 netmask 255.255.252.0 gw 192.170.64.2
+```
+
 ### Kendala
 
 Tidak ada
