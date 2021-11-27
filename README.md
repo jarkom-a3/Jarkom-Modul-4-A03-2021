@@ -508,7 +508,17 @@ Ubah network configuration pada ENIESLOBBY(eth0) yang mengarah ke OIMO(eth1) men
 
 ![image](https://user-images.githubusercontent.com/58259649/143679214-64858e2d-3454-481b-81d6-cb2bfbb5d056.png)
 
-Tambahkan static routing menuju jaringan A12 di router GUANHAO melalui router ALABASTA
+Tambahkan static routing menuju jaringan A12 di router GUANHAO melalui router OIMO
+
+```
+route add -net 192.170.4.0 netmask 255.255.255.0 gw 192.170.16.2
+```
+
+Tambahkan static routing menuju jaringan A12 di router FOOSHA melalui router GUANHAO
+
+```
+route add -net 192.170.4.0 netmask 255.255.255.0 gw 192.170.64.2
+```
 
 ### Kendala
 
