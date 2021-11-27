@@ -377,6 +377,15 @@ Ubah network configuration pada WATER7(eth0) menjadi seperti berikut.
 Tidak ada
 ### A7
 ### Cara Pengerjaan
+
+Ubah network configuration pada FOOSHA(eth3) menjadi seperti berikut.
+
+![image](https://user-images.githubusercontent.com/58259649/143674353-a109a386-661c-4675-82f0-ad6f103ea0f4.png)
+
+Ubah network configuration pada DORIKI(eth0) yang mengarah ke FOOSHA(eth3) menjadi seperti berikut.
+
+![image](https://user-images.githubusercontent.com/58259649/143674292-84973ee3-b1c8-4b92-acef-e6898709d738.png)
+
 ### Kendala
 
 Tidak ada
