@@ -240,7 +240,6 @@ Terakhir, mencoba ping ke google.com dari salah satu node.
 ![ping-pucci-google](https://user-images.githubusercontent.com/58259649/143665996-177173bc-1bd4-454b-b84c-6e2275a641c2.png)
 
 ### A1
-
 ### Cara Pengerjaan
 
 Ubah network configuration pada CIPHER(eth0) yang mengarah ke WATER7(eth2) menjadi seperti berikut.
@@ -269,6 +268,15 @@ Tidak ada
 
 ### A2
 ### Cara Pengerjaan
+
+Ubah network configuration pada BLUENO(eth0) yang mengarah ke FOOSHA(eth1) menjadi seperti berikut.
+
+![image](https://user-images.githubusercontent.com/58259649/143672973-3911910c-b684-462d-83c2-a03319a44df4.png)
+
+Ubah network configuration pada FOOSHA(eth1) menjadi seperti berikut.
+
+![image](https://user-images.githubusercontent.com/58259649/143672986-3b2e4635-233f-4265-8548-7bda762ff447.png)
+
 ### Kendala
 
 Tidak ada
