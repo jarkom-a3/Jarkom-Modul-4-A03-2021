@@ -251,13 +251,13 @@ Ubah network configuration pada WATER7(eth2) menjadi seperti berikut.
 
 ![image](https://user-images.githubusercontent.com/58259649/143672258-ef5c7e83-c01d-4e05-b162-59bc7ab1f9b2.png)
 
-Tambahkan default routing pada WATER7 dengan command berikut.
+Tambahkan default routing pada WATER7 yang mengarah ke FOOSHA dengan command berikut.
 
 ```
 route add -net 0.0.0.0 netmask 0.0.0.0 gw 192.171.64.1
 ```
 
-Tambahkan routing pada FOOSHA dengan command berikut.
+Tambahkan static routing menuju jaringan A1 di router FOOSHA melalui Router WATER7
 
 ```
 route add -net 192.171.32.0 netmask 255.255.252.0 gw 192.171.64.2
