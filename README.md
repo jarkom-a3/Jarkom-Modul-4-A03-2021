@@ -315,6 +315,29 @@ route add -net 192.171.8.0 netmask 255.255.255.128 gw 192.171.64.2
 Tidak ada
 ### A4
 ### Cara Pengerjaan
+
+Ubah network configuration pada PUCCI(eth2) menjadi seperti berikut.
+
+![image](https://user-images.githubusercontent.com/58259649/143673764-31454ae3-099d-40b5-acdc-61eaeddbf79a.png)
+
+Ubah network configuration pada CAMBELT(eth0) dan COURTYARD(eth0) yang mengarah ke PUCCI(eth2) menjadi seperti berikut.
+
+![image](https://user-images.githubusercontent.com/58259649/143673821-70c3c03d-a2a0-49ab-88f5-03dbe67165ea.png)
+
+![image](https://user-images.githubusercontent.com/58259649/143673830-b5c6d0f5-1576-43e5-a43e-948f5a375138.png)
+
+Tambahkan static routing menuju jaringan A4 di router WATER7 melalui router PUCCI
+
+```
+route add -net 192.171.0.0 netmask 255.255.248.0 gw 192.171.16.2
+```
+
+Tambahkan static routing menuju jaringan A3 di router FOOSHA melalui router WATER7
+
+```
+route add -net 192.171.0.0 netmask 255.255.248.0 gw 192.171.64.2
+```
+
 ### Kendala
 
 Tidak ada
