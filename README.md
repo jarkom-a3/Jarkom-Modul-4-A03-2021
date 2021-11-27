@@ -291,6 +291,13 @@ Ubah network configuration pada JIPANGU(eth0) yang mengarah ke PUCCI(eth1) menja
 
 ![image](https://user-images.githubusercontent.com/58259649/143673094-8b154c8a-189e-460f-bc88-b4ac037dff51.png)
 
+
+Tambahkan default routing pada PUCCI yang mengarah ke WATER7 dengan command berikut.
+
+```
+route add -net 0.0.0.0 netmask 0.0.0.0 gw 192.171.16.1
+```
+
 Tambahkan static routing menuju jaringan A3 di router WATER7 melalui router PUCCI
 
 ```
