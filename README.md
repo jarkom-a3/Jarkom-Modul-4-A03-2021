@@ -239,6 +239,106 @@ Terakhir, mencoba ping ke google.com dari salah satu node.
 
 ![ping-pucci-google](https://user-images.githubusercontent.com/58259649/143665996-177173bc-1bd4-454b-b84c-6e2275a641c2.png)
 
+### A1
+
+### Cara Pengerjaan
+
+Ubah network configuration pada CIPHER(eth0) yang mengarah ke WATER7(eth2) menjadi seperti berikut.
+
+![image](https://user-images.githubusercontent.com/58259649/143672243-7d46e53e-4c5c-44b8-9482-40d306007abf.png)
+
+Ubah network configuration pada WATER7(eth2) menjadi seperti berikut.
+
+![image](https://user-images.githubusercontent.com/58259649/143672258-ef5c7e83-c01d-4e05-b162-59bc7ab1f9b2.png)
+
+Tambahkan default routing pada WATER7 dengan command berikut.
+
+```
+route add -net 0.0.0.0 netmask 0.0.0.0 gw 192.171.64.1
+```
+
+Tambahkan routing pada FOOSHA dengan command berikut.
+
+```
+route add -net 192.171.32.0 netmask 255.255.252.0 gw 192.171.64.2
+```
+### Kendala
+
+Tidak ada
+
+### A2
+### Cara Pengerjaan
+### Kendala
+
+Tidak ada
+### A3
+### Cara Pengerjaan
+### Kendala
+
+Tidak ada
+### A4
+### Cara Pengerjaan
+### Kendala
+
+Tidak ada
+### A5
+### Cara Pengerjaan
+### Kendala
+
+Tidak ada
+### A6
+### Cara Pengerjaan
+### Kendala
+
+Tidak ada
+### A7
+### Cara Pengerjaan
+### Kendala
+
+Tidak ada
+### A8
+### Cara Pengerjaan
+### Kendala
+
+Tidak ada
+### A9
+### Cara Pengerjaan
+### Kendala
+
+Tidak ada
+### A10
+### Cara Pengerjaan
+### Kendala
+
+Tidak ada
+### A11
+### Cara Pengerjaan
+### Kendala
+
+Tidak ada
+### A12
+### Cara Pengerjaan
+### Kendala
+
+Tidak ada
+### A13
+### Cara Pengerjaan
+### Kendala
+
+Tidak ada
+### A14
+### Cara Pengerjaan
+### Kendala
+
+Tidak ada
+### A15
+### Cara Pengerjaan
+### Kendala
+
+Tidak ada
+
+
+
 
 
 
