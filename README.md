@@ -411,6 +411,21 @@ route add -net 192.170.36.0 netmask 255.255.252.0 gw 192.170.64.2
 Tidak ada
 ### A9
 ### Cara Pengerjaan
+
+Ubah network configuration pada FOOSHA(eth4) menjadi seperti berikut.
+
+![image](https://user-images.githubusercontent.com/58259649/143674696-a487081f-43e5-4395-8e7f-53f1949847ab.png)
+
+Ubah network configuration pada GUANHAO(eth0) yang mengarah ke FOOSHA(eth4) menjadi seperti berikut.
+
+![image](https://user-images.githubusercontent.com/58259649/143674748-56e812da-b1c8-4b76-becf-f1d37f3ba357.png)
+
+Tambahkan default routing pada GUANHAO yang mengarah ke FOOSHA dengan command berikut.
+
+```
+route add -net 0.0.0.0 netmask 0.0.0.0 gw 192.170.64.1
+```
+
 ### Kendala
 
 Tidak ada
