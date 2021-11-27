@@ -568,6 +568,27 @@ route add -net 192.170.0.0 netmask 255.255.252.0 gw 192.170.64.2
 Tidak ada
 ### A14
 ### Cara Pengerjaan
+
+Ubah network configuration pada GUANHAO(eth3) menjadi seperti berikut.
+
+![image](https://user-images.githubusercontent.com/58259649/143680312-d75ef2ed-d515-4cca-8625-8014f6aa808d.png)
+
+Ubah network configuration pada OIMO(eth0) menjadi seperti berikut.
+
+![image](https://user-images.githubusercontent.com/58259649/143680316-d9e8efd4-17bf-4488-a2d7-9c80b232af90.png)
+
+Tambahkan default routing pada OIMO yang mengarah ke GUANHAO dengan command berikut.
+
+```
+route add -net 0.0.0.0 netmask 0.0.0.0 gw 192.170.16.1
+```
+
+Tambahkan static routing menuju jaringan A14 di router FOOSHA melalui router GUANHAO
+
+```
+route add -net 192.170.16.0 netmask 255.255.255.252 gw 192.170.64.2
+```
+
 ### Kendala
 
 Tidak ada
