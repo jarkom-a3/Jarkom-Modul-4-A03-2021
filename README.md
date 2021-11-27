@@ -291,13 +291,6 @@ Ubah network configuration pada JIPANGU(eth0) yang mengarah ke PUCCI(eth1) menja
 
 ![image](https://user-images.githubusercontent.com/58259649/143673094-8b154c8a-189e-460f-bc88-b4ac037dff51.png)
 
-
-Tambahkan default routing pada PUCCI yang mengarah ke WATER7 dengan command berikut.
-
-```
-route add -net 0.0.0.0 netmask 0.0.0.0 gw 192.171.16.1
-```
-
 Tambahkan static routing menuju jaringan A3 di router WATER7 melalui router PUCCI
 
 ```
@@ -343,6 +336,28 @@ route add -net 192.171.0.0 netmask 255.255.248.0 gw 192.171.64.2
 Tidak ada
 ### A5
 ### Cara Pengerjaan
+
+Ubah network configuration pada WATER7(eth1) menjadi seperti berikut.
+
+![image](https://user-images.githubusercontent.com/58259649/143674029-6ef5b50b-fd18-45c1-bd92-b3e31d6d963b.png)
+
+Ubah network configuration pada PUCCI(eth0) menjadi seperti berikut.
+
+![image](https://user-images.githubusercontent.com/58259649/143674047-2e39b401-6f3a-4436-86a6-166bbac95939.png)
+
+
+Tambahkan default routing pada PUCCI yang mengarah ke WATER7 dengan command berikut.
+
+```
+route add -net 0.0.0.0 netmask 0.0.0.0 gw 192.171.16.1
+```
+
+Tambahkan static routing menuju jaringan A5 di router FOOSHA melalui router WATER7
+
+```
+route add -net 192.171.16.0 netmask 255.255.248.0 gw 192.171.64.2
+```
+
 ### Kendala
 
 Tidak ada
